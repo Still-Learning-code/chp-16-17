@@ -1,0 +1,22 @@
+//chp 16 Type Casting process of converting 1 type to another
+
+//fun main(args: Array<String>) {
+ // val obj: Any? = "Hello"
+  //  val str: String = obj as String  //not safe casting throw Exception
+   // val str2: String? = null as? String //safe casting
+
+   // val intval ="56.toInt"
+
+// }
+
+ fun String.greet(): String {
+     return "Hello $this"
+ }
+ fun Int.isEven(): Boolean {
+     return this % 2 == 0
+ }
+ fun main(){  //Chp 17 Extension Functions (.) dot used to call extension functions,access extension properties
+   println("Kotlin".greet())
+     println(1.isEven())
+     println(2.isEven())
+ }
